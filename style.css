@@ -228,11 +228,142 @@ nav{
     border: 1px solid rgba(0, 0, 0, 0.2);
     color: white;
 }
+.popup .overlay{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0,0,0,0.7);
+    z-index:1;
+    display: none;
+}
+.popup .content-call{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%) scale(0);
+    background:rgba(144, 163, 207, 1);
+    width: 90%;
+    height: 22%;
+    z-index:2;
+    padding: 20px;
+    box-sizing: border-box;
+    border-radius: 5px;
+
+}
+.popup .content-mail{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%) scale(0);
+    background:rgb(255, 255, 255);
+    width: 90%;
+    max-height: 600px;
+    z-index:2;
+    padding: 20px;
+    box-sizing: border-box;
+    border-radius: 5px;
+}
+form{
+   display: flex;
+   flex-direction: column;
+    padding: 1vw 2vw;
+    align-items: center;
+    justify-content: center;
+
+}
+form input, form textarea{
+    border: 0;
+    margin: 10px 0;
+    padding: 10px;
+    outline: none;
+    border: solid 1px rgba(144, 163, 207, 1);
+    border-radius: 5px;
+    color: rgba(144, 163, 207, 1);
+    width: 100%;
+}
+form button{
+    background-color: rgba(0, 34, 68, 1);
+    color: rgba(224, 255, 255, 1);
+    width: 8rem;
+    border-radius:5px ;
+    padding: 5px 15px;
+}
+::placeholder{
+    color: rgba(144, 163, 207, 1);
+}
+input[type=radio]{
+    text-align: left;
+    width: 5%;
+    margin: 0;
+}
+#accept{
+    display:flex;
+    justify-content: center;
+    align-items: start;
+    gap: 10px;
+}
+#accept p{
+    width: 100%;
+}
+.popup .close-btn{
+    position: absolute;
+    right: 15px;
+    top: 10px;
+}
+.grid-call{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content:center;
+    align-items: center;
+}
+.popup .content-call img{
+    width: 100%;
+    grid-column: 1/2;
+}
+.call-text{
+    grid-column:2/3;
+    width: 100%;
+}
+.call-text h1{
+    font-size: 1.3rem;
+}
+.call-text p {
+    font-size: 0.7rem;
+}
+#phone-ico{
+    width: 25px;
+    height: 25px;
+    margin-right: 10px;
+
+}
+.number{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.number span{
+    font-size: 25px;
+    line-height: 50px;
+    letter-spacing:2px
+}
+.popup.active .overlay{
+    display: block;
+}
+
+.popup.active .content-call{
+    transition: all 0.3s ease-in-out;
+    transform: translate(-50%,-50%) scale(1);
+}
+.popup.active .content-mail{
+    transition: all 0.3s ease-in-out;
+    transform: translate(-50%,-50%) scale(1);
+}
 .gallery{
     width: 100%;
     max-height: 100vh;
     display: flex;
-
 }
 .photo{
     margin:10px 20px ;
