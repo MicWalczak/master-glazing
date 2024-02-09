@@ -245,7 +245,7 @@ nav{
     transform: translate(-50%,-50%) scale(0);
     background:rgba(144, 163, 207, 1);
     width: 90%;
-    height: 22%;
+    height: fit-content;
     z-index:2;
     padding: 20px;
     box-sizing: border-box;
@@ -259,7 +259,7 @@ nav{
     transform: translate(-50%,-50%) scale(0);
     background:rgb(255, 255, 255);
     width: 90%;
-    max-height: 600px;
+    max-height: fit-content;
     z-index:2;
     padding: 20px;
     box-sizing: border-box;
