@@ -377,6 +377,10 @@ input[type=radio]{
 .photo{
     margin:10px 20px ;
 }
+
+.image-grid{
+    display: none;
+}
 .carousel-item img{
     /* max-height: 50vh; */
     align-items: center;
@@ -857,7 +861,7 @@ footer .grid{
         font-size: 38px;
     }
     .lang-menu ul{
-        top:90px
+        top:55px
     }
     .lang-menu .en:before{
         width: 32px;
@@ -949,7 +953,6 @@ footer .grid{
         font-size: 32px;
     }
     .left ,.right{
-        width: 100%;
         height: 50%;   
     }
     .right{
