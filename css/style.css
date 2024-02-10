@@ -872,11 +872,11 @@ footer .grid{
         width: 80%;
         margin: auto;
         margin-top: 100px;
-        height: 100vh;
+        height: 80vh;
+        background-size: 50%;
     }
     .hero_buttons{
         height: 100px;
-
     }
     .hero_buttons button{
         height: 55px;
