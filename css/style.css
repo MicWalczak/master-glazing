@@ -202,7 +202,7 @@ header{
     justify-content: center;
     align-items: center;
     width: 100%;
-    margin: 30px 0;
+
     }
 .mail ,.gallerybtn{
     background-color: rgba(0, 34, 68, 0.9) !important;
@@ -212,7 +212,7 @@ header{
     border-radius: 5px;
     color: white !important;
     box-shadow: 1px 1px 2px rgb(120, 120, 120);
-    margin-right: 20px;
+    /* margin-right: 20px; */
 }
 .mail:active, .mail:hover .gallerybtn:active .gallerybtn:hover {
     background-color: #f5f5f594 !important;
@@ -233,9 +233,9 @@ header{
     border: 1px solid rgba(0, 0, 0, 0.2);
     color: white;
 } 
-.offer_buttons .gallerybtn{
+/* .offer_buttons .gallerybtn{
     margin-left: 35px;
-}   
+}    */
 
 .popup .overlay{
     position: fixed;
