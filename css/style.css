@@ -236,6 +236,9 @@ header{
 /* .offer_buttons .gallerybtn{
     margin-left: 35px;
 }    */
+button{
+    margin: 0 5px;
+  }
 
 .popup .overlay{
     position: fixed;
@@ -908,7 +911,7 @@ footer .grid{
         height:80vh;
         width: 40%;
     }
-  
+ 
     .popup .content-mail input, textarea,p{
         font-size: 18px;
     }
