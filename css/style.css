@@ -174,7 +174,7 @@ header{
 
 .hero{
     background-image: url(../graphics/baner1.svg);
-    background-size: 87%;
+    background-size: 100%;
     background-repeat: no-repeat;
     background-position: center;
     margin-top: 10px;
@@ -192,9 +192,9 @@ header{
 }
 .description{
     margin: 0 auto;
-    padding-top: 30px;
+    padding-top: 15px;
     text-align: center;
-    width: 70%;
+    width: 85%;
     color: rgba(0, 34, 68, 1);
 }
 .hero_buttons{
@@ -202,7 +202,7 @@ header{
     justify-content: center;
     align-items: center;
     width: 100%;
-
+    margin-top: 15px;
     }
 .mail ,.gallerybtn{
     background-color: rgba(0, 34, 68, 0.9) !important;
@@ -899,6 +899,7 @@ footer .grid{
     }
     .hero_buttons{
         height: 100px;
+
     }
     .hero_buttons button{
         height: 55px;
