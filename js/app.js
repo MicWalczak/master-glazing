@@ -4,6 +4,9 @@ function togglePopupCall(){
 function togglePopupMail(){
     document.getElementById("popup-2").classList.toggle('active');
 }
+function togglePopupBooklet(){
+    document.getElementById("popup-3").classList.toggle('active');
+}
 
 window.addEventListener("scroll",function(){
     var header = document.querySelector('header')

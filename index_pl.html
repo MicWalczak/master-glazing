@@ -154,6 +154,7 @@
         <div class="hero_buttons">
             <button class="mail" onclick="togglePopupMail()">Napisz</button>
             <button class="call" onclick="togglePopupCall()">Zadzwoń</button>
+            <button class="booklet" onclick="togglePopupBooklet()">Broszury</button>
         </div>
     </div>
     <div class="popup" id="popup-1">
@@ -195,6 +196,19 @@
         </div>
       </div>
     </div>
+
+    <div class="popup" id="popup-3">
+      <div class="overlay">
+        <div class="content-booklet">
+          <div class="close-btn" onclick="togglePopupBooklet()">&times;</div>
+            <div class="grid-booklet">
+              <div class="booklet-links"><a href="./booklet/GlobalDoorSolidBrochure-MG.pdf"><img src="./graphics/karuzela/image (9).png" alt=""><p class="p-bro">Name 1</p></a></div>
+              <div class="booklet-links"><a href="./booklet/BI_FOLD.pdf"><img src="./graphics/karuzela/image (10).png" alt=""><p class="p-bro">Name 4</p></a></div>
+              <div class="booklet-links"><a href="./booklet/Cortizo-Aluminium-Window-Casement-System-Brochure-Bedford-Bi-folds-Ltd.pdf"><img src="./graphics/karuzela/image (11).png" alt=""><p class="p-bro">Name 1</p></a></div>
+              <div class="booklet-links"><a href="./booklet/Kommerling_System_brochure.pdf"><img src="./graphics/karuzela/image (8).png" alt=""><p class="p-bro">Name 1</p></a></div>
+            </div>  
+          </div>
+        </div>
 
     <div id="carouselExampleSlidesOnly" class="carousel slide photo" data-ride="carousel" data-interval="3000">
         <div class="carousel-inner" onclick="window.open('Galery.html')">
@@ -319,10 +333,11 @@
               Same okna są doskonałej jakości, zapewniając lepszą izolację i zauważalną poprawę efektywności energetycznej. 
               Ogólnie rzecz biorąc, gorąco polecam okna Master Glazing ze względu na ich usługi najwyższej jakości i doskonałe
                produkty.</p>
-                    <img src="./graphics/Ellipse 2.png" alt="">
+               <div class="person">
+                    <img src="./graphics/karuzela/person1.jpg" alt="">
                     <p class="customer">Pattie Noksun</p>
                 </div>
-
+              </div>
         <div class="opinion">
             <section class="stars">
                 <img src="./graphics/Star.svg" alt="" class="star">
@@ -337,8 +352,8 @@
                przed czasem, ale okna również prezentują się pięknie i znacznie poprawiły estetykę naszego domu. Chwalę 
                firmę Master Glazing za ich doskonałą obsługę i wybitną jakość produktów.</p>
                 <div class="person">
-                    <img src="./graphics/Ellipse 2.png" alt="">
-                    <p class="customer">Pattie Noksun</p>
+                    <img src="./graphics/karuzela/Person2.jpg" alt="">
+                    <p class="customer">Emily Williams</p>
                 </div>
         </div>
     </div>
@@ -460,7 +475,7 @@
         </div>
         <div class="socials">
             <img src="./graphics/Ig.svg" alt="">
-            <img src="./graphics/What's up.svg" alt="">
+            <a href="https://wa.me/447405141912"><img src="./graphics/What's up.svg" alt="" ></a>
         </div>
     </div>
     </footer>

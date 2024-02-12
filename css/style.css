@@ -199,12 +199,12 @@ header{
 }
 .hero_buttons{
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
-    width: 100%;
-    margin-top: 15px;
+    width: 80%;
+    margin: 15px auto;
     }
-.mail ,.gallerybtn{
+.mail ,.gallerybtn, .booklet{
     background-color: rgba(0, 34, 68, 0.9) !important;
     text-align: center;
     padding: 5px 20px;
@@ -212,14 +212,13 @@ header{
     border-radius: 5px;
     color: white !important;
     box-shadow: 1px 1px 2px rgb(120, 120, 120);
-    /* margin-right: 20px; */
 }
-.mail:active, .mail:hover .gallerybtn:active .gallerybtn:hover {
+.mail:active, .mail:hover, .gallerybtn:active .gallerybtn:hover, .booklet:active, .booklet:hover{
     background-color: #f5f5f594 !important;
     border: 1px solid rgba(0, 0, 0, 0.1) !important;
     color: rgba(0, 34, 68, 1) !important;
 }
-.call{
+.call {
     background-color: whitesmoke;
     text-align: center;
     padding: 5px 20px;
@@ -233,9 +232,6 @@ header{
     border: 1px solid rgba(0, 0, 0, 0.2);
     color: white;
 } 
-/* .offer_buttons .gallerybtn{
-    margin-left: 35px;
-}    */
 button{
     margin: 0 5px;
   }
@@ -252,6 +248,7 @@ button{
 }
 .close-btn,button, .socials img{
     cursor: pointer;
+    color: #000;
 }
 
 .popup .content-call{
@@ -266,7 +263,6 @@ button{
     padding: 20px;
     box-sizing: border-box;
     border-radius: 5px;
-
 }
 .popup .content-mail{
     position: absolute;
@@ -281,13 +277,25 @@ button{
     box-sizing: border-box;
     border-radius: 5px;
 }
+.popup .content-booklet{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%) scale(0);
+    background:rgba(135, 168, 245, 0.613);
+    width: 80%;
+    height: fit-content;
+    z-index:2;
+    padding: 20px;
+    box-sizing: border-box;
+    border-radius: 10px;
+}
 form{
    display: flex;
    flex-direction: column;
     padding: 1vw 2vw;
     align-items: center;
     justify-content: center;
-
 }
 form input, form textarea{
     border: 0;
@@ -327,12 +335,43 @@ input[type=radio]{
     position: absolute;
     right: 15px;
     top: 10px;
+
 }
 .grid-call{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     justify-content:center;
     align-items: center;
+}
+.grid-booklet{
+    display: grid; 
+    grid-template-columns:repeat(2, 1fr); 
+    grid-template-rows:repeat(2, 1fr); 
+    gap: 15px 15px; 
+    justify-content:center;
+    align-items: center; 
+}
+
+.grid-booklet .p-bro{
+    text-align: center;
+    font-size: 100%;
+    text-decoration: none;
+    color: rgba(0, 34, 68, 1)
+}
+.booklet-links a{
+    display: flex;
+    flex-direction: column;
+    width:fit-content;
+    height: fit-content;
+    justify-content: space-around;
+    align-items: center;
+
+}
+.booklet-links img{
+    width:50%;
+    height: 50%;
+    border-radius: 5px;
+    margin: 0 auto 10px auto;
 }
 .popup .content-call img{
     width: 100%;
@@ -367,12 +406,18 @@ input[type=radio]{
 .popup.active .overlay{
     display: block;
 }
-
+.person img{
+    border-radius: 50%;
+}
 .popup.active .content-call{
     transition: all 0.3s ease-in-out;
     transform: translate(-50%,-50%) scale(1);
 }
 .popup.active .content-mail{
+    transition: all 0.3s ease-in-out;
+    transform: translate(-50%,-50%) scale(1);
+}
+.popup.active .content-booklet{
     transition: all 0.3s ease-in-out;
     transform: translate(-50%,-50%) scale(1);
 }
@@ -604,6 +649,9 @@ header{
     justify-content: center;
     align-items: center;
 }
+.hero_buttons button{
+    width: 150px ;
+}
 #btng {
     display: none;
 }
@@ -765,9 +813,9 @@ footer .grid{
         padding-bottom: 10px;
     }
     .hero button{
-        width: 15vw;
+        width: 20vw;
         height: 4.5vh;
-        font-size: 20px;
+        font-size: 30px;
     }
     .navigation{
         display: flex;
@@ -786,9 +834,6 @@ footer .grid{
     .carousel-item .active{
         height: fit-content;
     }
-
-
-
     .works_item{
         width: 80%;
         display: flex;
