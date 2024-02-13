@@ -282,11 +282,10 @@ button{
     top: 50%;
     left: 50%;
     transform: translate(-50%,-50%) scale(0);
-    background:rgba(135, 168, 245, 0.613);
+    background:rgb(94, 121, 185);
     width: 80%;
     height: fit-content;
     z-index:2;
-    padding: 20px;
     box-sizing: border-box;
     border-radius: 10px;
 }
@@ -347,7 +346,7 @@ input[type=radio]{
     display: grid; 
     grid-template-columns:repeat(2, 1fr); 
     grid-template-rows:repeat(2, 1fr); 
-    gap: 15px 15px; 
+    gap: 5px 5px; 
     justify-content:center;
     align-items: center; 
 }
@@ -368,7 +367,7 @@ input[type=radio]{
 
 }
 .booklet-links img{
-    width:50%;
+    max-width:100%;
     height: 50%;
     border-radius: 5px;
     margin: 0 auto 10px auto;
@@ -814,9 +813,10 @@ footer .grid{
     }
     .hero button{
         width: 20vw;
-        height: 4.5vh;
+        height: 6vh;
         font-size: 30px;
     }
+
     .navigation{
         display: flex;
         justify-content: space-between;
@@ -957,7 +957,10 @@ footer .grid{
         height:80vh;
         width: 40%;
     }
- 
+    .booklet-links img{
+        max-width:70%;
+        height: 50%;
+    }
     .popup .content-mail input, textarea,p{
         font-size: 18px;
     }
@@ -1071,8 +1074,10 @@ footer .grid{
         grid-auto-rows: var(--row-height);
         gap: var(--gap);
     }
-    
-    .image-grid>img {
+    .baner h3, p, .offer_buttons{
+        margin-left: 20px;
+    } 
+    .image-grid img {
         width: 100%;
         height: 100%;
         object-fit: cover;
