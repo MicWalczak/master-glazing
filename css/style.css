@@ -18,6 +18,8 @@
     box-sizing: border-box;
     font-family: 'DM Sans', sans-serif !important;
 }
+/*cookies*/
+
 li{
     list-style: none;
 }
@@ -45,6 +47,10 @@ h3{
     color: white;
    -webkit-text-stroke-width: 1px;
    -webkit-text-stroke-color: rgba(0, 0, 0, 0.6)
+}
+p{
+    text-align: justify;
+    text-justify: inter-word;
 }
 #offer-pl{
     font-weight: 500;
