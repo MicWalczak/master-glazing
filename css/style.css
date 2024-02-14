@@ -364,7 +364,6 @@ input[type=radio]{
     height: fit-content;
     justify-content: space-around;
     align-items: center;
-
 }
 .booklet-links img{
     max-width:100%;
