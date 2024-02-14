@@ -48,10 +48,6 @@ h3{
    -webkit-text-stroke-width: 1px;
    -webkit-text-stroke-color: rgba(0, 0, 0, 0.6)
 }
-p{
-    text-align: justify;
-    text-justify: inter-word;
-}
 #offer-pl{
     font-weight: 500;
     color: white;
