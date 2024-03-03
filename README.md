@@ -11,16 +11,19 @@ A business card website for a small family business from London that installs do
 
 ## About the Project
 
-AIt was a breakthrough in my adventure with creating websites because for the first time I had the opportunity to talk to the client in a fully professional way, prepare a brief
+It was a breakthrough in my adventure with creating websites because for the first time I had the opportunity to talk to the client in a fully professional way, prepare a brief
 and contact the client at every stage of the project, starting from sketches, through the design in Figmno and the appropriate selection of photos, to the final product.
 
-##Technologies
+## Technologies
+
 -Html5
 -CSS
 -JavaScripy
 
-##Contribution
+## Contribution
+
 The entire website is made by me
 
-##Contact
+## Contact
+
 https://master-glazing.co.uk
